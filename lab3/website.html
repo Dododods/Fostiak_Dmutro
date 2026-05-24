@@ -2,37 +2,44 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Лабораторна №3</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Лабораторна №4</title>
 </head>
 <body>
 
-<header>
-    <h1>Адаптивний дизайн з Flexbox</h1>
-</header>
+<script>
 
-<main class="container">
+let name = prompt("Введіть ваше ім'я:");
+alert("Привіт, " + name + "! Радий тебе бачити!");
+console.log("Привіт, " + name + "!");
 
-    <!-- 13 КАРТОК -->
-    <div class="card"><img src="https://picsum.photos/120?1"><p>Опис фото 1</p></div>
-    <div class="card"><img src="https://picsum.photos/120?2"><p>Опис фото 2</p></div>
-    <div class="card"><img src="https://picsum.photos/120?3"><p>Опис фото 3</p></div>
-    <div class="card"><img src="https://picsum.photos/120?4"><p>Опис фото 4</p></div>
-    <div class="card"><img src="https://picsum.photos/120?5"><p>Опис фото 5</p></div>
-    <div class="card"><img src="https://picsum.photos/120?6"><p>Опис фото 6</p></div>
-    <div class="card"><img src="https://picsum.photos/120?7"><p>Опис фото 7</p></div>
-    <div class="card"><img src="https://picsum.photos/120?8"><p>Опис фото 8</p></div>
-    <div class="card"><img src="https://picsum.photos/120?9"><p>Опис фото 9</p></div>
-    <div class="card"><img src="https://picsum.photos/120?10"><p>Опис фото 10</p></div>
-    <div class="card"><img src="https://picsum.photos/120?11"><p>Опис фото 11</p></div>
-    <div class="card"><img src="https://picsum.photos/120?12"><p>Опис фото 12</p></div>
-    <div class="card"><img src="https://picsum.photos/120?13"><p>Опис фото 13</p></div>
+let num1 = parseFloat(prompt("Введіть перше число:"));
+let num2 = parseFloat(prompt("Введіть друге число:"));
 
-</main>
+let multiplication = num1 * num2;
+let division = num1 / num2;
 
-<footer>
-    <p>Дякую за увагу!</p>
-</footer>
+alert("Добуток: " + multiplication + "\nЧастка: " + division);
+console.log("Добуток:", multiplication);
+console.log("Частка:", division);
+
+let birthYear = parseInt(prompt("Введіть рік народження:"));
+let currentYear = 2025;
+let userAge = currentYear - birthYear;
+const myAge = 18;
+
+let difference = Math.abs(userAge - myAge);
+
+if (userAge > myAge) {
+    alert("Ваш вік: " + userAge + ". Ви старші на " + difference + " років.");
+} else if (userAge < myAge) {
+    alert("Ваш вік: " + userAge + ". Ви молодші на " + difference + " років.");
+} else {
+    alert("Ваш вік: " + userAge + ". Ми одного віку!");
+}
+
+console.log("Вік користувача:", userAge);
+
+</script>
 
 </body>
 </html>
